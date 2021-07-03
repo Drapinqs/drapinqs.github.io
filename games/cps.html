@@ -1,0 +1,51 @@
+<html lang="en-US"><head>
+<button id="btn" onmousedown="myFunction()">Click</button>
+<p id="demo">0</p>
+<body oncontextmenu="return false;">
+<script>
+var count = 1;
+function myFunction() {
+  document.getElementById("demo").innerHTML = count++;
+}
+</script>
+<style>
+body {
+    background-color: #101010
+}
+
+button {
+	background-image: url("smoke.jpg");
+	display			: block;
+	position        : relative;
+	padding         : 25px 0;
+	border-radius   : 15px;
+	border          : solid 3px #000000;
+	transition      : all 0.3s ease;
+	margin          : 25px auto;
+	font-family     : sans-serif;
+	font-size       : 35px;
+	font-weight     : bold;
+	text-transform  : uppercase;
+	text-align	    : center;
+	color           : white;
+	letter-spacing  : 1.3px;
+	cursor          : pointer;
+	width           : 590px;
+	height          : 332px;
+	overflow   	    : hidden;
+	box-sizing 		: border-box;
+	-moz-box-sizing	: border-box;
+	-webkit-box-sizing : border-box;
+}
+
+#demo {
+
+	text-align	    : center;
+    margin: auto;
+	font-family     : sans-serif;
+	font-size       : 50px;
+	font-weight     : bold;
+	color           : white;
+	letter-spacing  : 1.3px;
+}
+</style></body></html>
