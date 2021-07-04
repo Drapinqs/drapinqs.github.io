@@ -1,25 +1,19 @@
 <html><head>
 <style>
-img {
-  opacity: 0.6;
-  position: absolute;
-}
+
 
 .center {
-  display: relative;
+  position: absolute;
   width: 80%;
-  top: 100px;
 }
 </style>
-</head>
+<script data-dapp-detection="">!function(){let e=!1;function n(){if(!e){const n=document.createElement("meta");n.name="dapp-detected",document.head.appendChild(n),e=!0}}if(window.hasOwnProperty("ethereum")){if(window.__disableDappDetectionInsertion=!0,void 0===window.ethereum)return;n()}else{var t=window.ethereum;Object.defineProperty(window,"ethereum",{configurable:!0,enumerable:!1,set:function(e){window.__disableDappDetectionInsertion||n(),t=e},get:function(){if(!window.__disableDappDetectionInsertion){const e=arguments.callee;e&&e.caller&&e.caller.toString&&-1!==e.caller.toString().indexOf("getOwnPropertyNames")||n()}return t}})}}();</script></head>
 <body>
 
-<img src="images/1080p.jpg" width="100%" height="100%">
+
 
   <style class="stylesheetcs">
-body{ margin:0} 
-#particles-js{ position:absolute; width: device-width; height: 1080; }
-  </style>
+body{ margin:0;} canvas{ display: block; vertical-align: bottom; } #particles-js{ position:absolute; width: 100%; height: 100%;  }</style>
 
 
 <img src="images/Drapinqs.png" alt="logo" class="center">
@@ -30,7 +24,7 @@ body{ margin:0}
 </div>
 
 <div id="particles-js">
-<canvas class="particles-js-canvas-el" width="3840" height="2160" style="width: 100%; height: 100%;"></canvas></div>
+<canvas class="particles-js-canvas-el" width="811" height="653" style="width: 100%; height: 100%;"></canvas></div>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
   <script id="jsparticle">
@@ -46,6 +40,9 @@ body{ margin:0}
 }
 
 body {
+  background-color: black;
+  background-image: url("./images/1080p.jpg");
+  background-size: cover;
   position: relative;
   display: flex;
   justify-content: center;
@@ -158,5 +155,6 @@ body {
 
 html, body {margin: 0; height: device-height; overflow: hidden}
 </style>
+
 
 </body></html>
