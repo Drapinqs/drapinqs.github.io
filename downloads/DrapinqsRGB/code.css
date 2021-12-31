@@ -393,6 +393,10 @@ a.metadataName-14STf-,
     display: block !important;
 }
 
+.modalRoot-1Kx4Hb.root-1gCeng.small-3iVZYw,.flex-1xMQg5.flex-1O1GKY.horizontalReverse-2eTKWD, .inner-MADQqc.sansAttachButton-td2irx {
+    background-color: rgb(13, 13, 13);
+}
+
 .wordmark-2iDDfm svg path {
     display: none;
 }
