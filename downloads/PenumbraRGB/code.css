@@ -1,3 +1,10 @@
+/**
+* @name PenumbraRGBTesting
+* @author Syringe#9999
+* @authorLink http://drapinqs.gq
+* @version 1
+* @description Black (#000000) Theme for Discord + RGB Rainbow Colors/Accents 
+*/
 
 /* DONT MODIFY UNLESS YOU KNOW WHAT YOURE DOING */
 
@@ -317,8 +324,6 @@ a.metadataName-14STf-,
   --C7: rgb(255 0 255);
 
         /* AMOLED */
-  --content-3YMskv: #000000 !important;
-  --peopleColumn-29fq28: #000000 !important;
   --background-primary: #000000 !important;
   --background-secondary: #040404 !important;
   --background-secondary-alt: #010101 !important;
@@ -376,12 +381,18 @@ a.metadataName-14STf-,
     background-size: cover;
 }
 
+.tabBody-3YRQ8W,.panels-j1Uci_{
+    background-color: #060606
+}
+
 .contents-18-Yxp.button-3AYNKb.button-318s1X {
     display: none;
 }
+
 .barButtonMain-3K-jeJ.barButtonBase-2uLO1z{
     text-shadow: 0.3px 0.3px 2.5px black;
 }
+
 .actionButton-3vN-m0.button-38aScr {
     text-shadow: 0px 0px 2px grey;
 }
@@ -393,7 +404,7 @@ a.metadataName-14STf-,
     display: block !important;
 }
 
-.modalRoot-1Kx4Hb.root-1gCeng.small-3iVZYw,.flex-1xMQg5.flex-1O1GKY.horizontalReverse-2eTKWD, .inner-MADQqc.sansAttachButton-td2irx {
+.modalRoot-1Kx4Hb.root-1gCeng.small-3iVZYw,.scrollableContainer-2NUZem.webkit-HjD9Er, .inner-MADQqc.sansAttachButton-td2irx {
     background-color: rgb(13, 13, 13);
 }
 
@@ -403,4 +414,8 @@ a.metadataName-14STf-,
 
 .winButtonClose-1HsbF-:hover,.winButtonMinMax-PBQ2gm:hover {
     background-color: rgb(50, 13, 80, 0.8);
+}
+
+.webkit-scrollbar-thumb{
+    border:2px solid white !important
 }
