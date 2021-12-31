@@ -29,13 +29,11 @@
 .ThemeGen .divider,
 .container-3auIfb[style*="background-color: hsl(139, calc(var(--saturation-factor, 1) * 47.3%), 43.9%);"],
 .container-3auIfb[style*="background-color: rgb(114, 137, 218);"],
-.thin-1ybCId::-webkit-scrollbar-thumb,
 .barFill-23-gu-,
 .tile-2gi3tr .background-ujHpbY:hover,
 .divider-3573oO,
 .topSectionStreaming-1Tpf5X .buttonInvertedPurple-WtBglX,
 [class^=expandedFolderBackground-],
-.guilds-1SWlCJ div[class^=scroller-]>div[aria-label]::-webkit-scrollbar-thumb,
 .bd-toasts .bd-toast::before,
 .checked-3_4uQ9,
 #bd-settings-sidebar .ui-tab-bar-item.selected:after,
@@ -79,6 +77,8 @@
 .lookFilled-1Gx00P.colorGreen-29iAKY,
 .lookFilled-1Gx00P.colorGreen-29iAKY:hover,
 .lookInverted-2D7oAl.colorBrand-3pXr91,
+.button-38aScr.lookBlank-3eh9lL.colorBrand-3pXr91.sizeMin-1mJd1x.grow-q77ONN,
+.backButton-iA7KIs.button-38aScr.lookBlank-3eh9lL,
 .lookInverted-2D7oAl.colorBrand-3pXr91:hover {
 	animation: RGB_BG var(--time) linear infinite !important;
 	-webkit-animation: RGB_BG var(--time) linear infinite !important;
@@ -89,6 +89,8 @@
 .ThemeGen #copyright strong,
 .ThemeGen .title p,
 .header-3ZP1MY,
+.title-XLSR78,
+.rowText-X45Our.fontDisplay-1dagSA.base-1x0h_U.size16-1P40sf,
 .mainContent-2h-GEV .name-3l27Hl.container-2ax-kl,
 .colorBrand-ROmMP1,
 a.metadataName-14STf-,
@@ -137,7 +139,13 @@ a.metadataName-14STf-,
 .button-14-BFJ.enabled-2cQ-u7,
 .size14-e6ZScH.title-eS5yk3,
 .wordmark-2iDDfm,
+.colorHeaderSecondary-3Sp3Ft.size12-3cLvbJ.optionHeader-1-5lcp,
+.title-3w8xhj.fontDisplay-1dagSA.base-1x0h_U.size24-RIRrxO,
+.colorStandard-2KCXvj.size16-1P40sf.text-1FOLJS,
+.footerTitle-2CYZch.fontDisplay-1dagSA.base-1x0h_U.size20-17Iy80,
 .winButtonMinMax-PBQ2gm, .winButtonClose-1HsbF-,
+.colorStandard-2KCXvj.size14-e6ZScH,
+.sampleLink-2NLvZg,
 .channel-2QD9_O.selected-aXhQR6 .activity-3mKQ-i {
 	animation: RGB_TEXT var(--time) linear infinite !important;
 	-webkit-animation: RGB_TEXT var(--time) linear infinite !important;
@@ -375,24 +383,23 @@ a.metadataName-14STf-,
     color: rgb(255,0,255);
     stroke: rgb(255,0,255);
 }
-
 .childWrapper-anI2G9 {
     background-image: url(https://i.imgur.com/VUwFNqr.gif);
     background-size: cover;
 }
 
-.tabBody-3YRQ8W,.panels-j1Uci_{
+.root-1gCeng.medium-2RE1hE.fullscreenOnMobile-1bD22y,.activeGame-14JI7o.notDetected-33MY4s,.closeIcon-150W3V,.modalRoot-1XowU7.root-1gCeng.fullscreenOnMobile-1bD22y,.modalSize-cqUaws.root-1gCeng.fullscreenOnMobile-1bD22y,.root-217Brm,.searchBox-3Y2Vi7.searchBox-2_mAlO,.scroller-1d5FgU.auto-Ge5KZx.scrollerBase-289Jih,.rowContainer-3AFY0S,.inputDefault-_djjkz.input-cIJ7To,.container-UC8Ug1,.chat-3bRxxu .scroller-2LSbBU::-webkit-scrollbar-track,.tabBody-3YRQ8W,.panels-j1Uci_{
     background-color: #060606
 }
-
+.guildInfo-1STtYi, {
+   background-color: #000000;
+}
 .contents-18-Yxp.button-3AYNKb.button-318s1X {
     display: none;
 }
-
 .barButtonMain-3K-jeJ.barButtonBase-2uLO1z{
     text-shadow: 0.3px 0.3px 2.5px black;
 }
-
 .actionButton-3vN-m0.button-38aScr {
     text-shadow: 0px 0px 2px grey;
 }
@@ -403,19 +410,13 @@ a.metadataName-14STf-,
     top: -12px;
     display: block !important;
 }
-
-.modalRoot-1Kx4Hb.root-1gCeng.small-3iVZYw,.scrollableContainer-2NUZem.webkit-HjD9Er, .inner-MADQqc.sansAttachButton-td2irx {
+.payment-xT17Mq.paymentRow-2e7VM6.bottomDivider-1K9Gao,.noWrap-3jynv6.summaryInfo-2QFKUg,.codeRedemptionRedirect-1wVR4b.card-3Qj_Yx,.verticalFit-waKLYN.paginator-166-09,.paymentPane-3bwJ6A.verticalFit-waKLYN,.addGamePopout-2RY8Ju.elevationBorderHigh-2WYJ09,.noiseCancellationPopout-iRK2A0,.section-5co3nR,.authBox-hW6HRx.theme-dark,.theme-dark.navRow-3bgpKd,.animatedNode-5VAmrN,.authBoxExpanded-2jqaBe.authBox-hW6HRx,.textarea-2r0oV8.inputDefault-_djjkz.input-cIJ7To.scrollbarGhostHairline-1mSOM1.scrollbar-3dvm_9,.contextMenuNub-3yOOYo.colorable-1bkp8v.primaryDark-3mSFDl,.controlButton-2MhVEL.centerButton-3CaNcJ.colorable-1bkp8v.primaryDark-3mSFDl.button-38aScr.lookBlank-3eh9lL.colorBrand-3pXr91.grow-q77ONN,.staticButton-1B0rfQ.centerButton-3CaNcJ.colorable-1bkp8v.primaryDark-3mSFDl.button-38aScr.lookBlank-3eh9lL.colorBrand-3pXr91.grow-q77ONN,.input-2VB9rf,.noWrap-3jynv6.footer-2gL1pp,.footer-2gL1pp.footer-1NnaNd,.guilds-1SWlCJ div[class^=scroller-]>div[aria-label]::-webkit-scrollbar-thumb,.thin-1ybCId::-webkit-scrollbar-thumb,.tooltip-2QfLtc.tooltipRight-2JM5PQ,.bottomInformationTextContainer-2lvA_a,.stickerResults-3HacYG,.wrapper-1-Fsb8.categoryHeader-O1zU94,.scroller-3gAZLs.list-17lzo8.thin-1ybCId.scrollerBase-289Jih,.resultsGroup-r_nuzN,.content-1LAB8Z.content-mK72R6.thin-1ybCId.scrollerBase-289Jih,.flex-1xMQg5.flex-1O1GKY.vertical-V37hAW.flex-1O1GKY.directionColumn-35P_nr.justifyCenter-3D2jYp.alignStretch-DpGPf3.noWrap-3jynv6.content-dfabe7,.topSection-y3p-_D,.scroller-lynW5A.thin-1ybCId,.inner-3nWsbo,.friendsEmpty-1K9B4k,.root-1gCeng.small-3iVZYw,.content-1LAB8Z.listScroller-3GmIYj ,.tabContent-nZ-1U5.open-yICTYu,.scroller-2hZ97C.thin-1ybCId,.modal-2VIBV8.root-1gCeng,.profileBannerPreview-gaX5MP,.scroller-3BxosC.thin-1ybCId.scrollerBase-289Jih,.body-r6_QPy,.topSection-y3p-_D,.userPopout-xaxa6l,.bodyInnerWrapper-26fQXj,.footer-3UKYOU,.modalRoot-1Kx4Hb.root-1gCeng.small-3iVZYw,.scrollableContainer-2NUZem.webkit-HjD9Er, .inner-MADQqc.sansAttachButton-td2irx {
     background-color: rgb(13, 13, 13);
 }
 
 .wordmark-2iDDfm svg path {
     display: none;
 }
-
 .winButtonClose-1HsbF-:hover,.winButtonMinMax-PBQ2gm:hover {
     background-color: rgb(50, 13, 80, 0.8);
-}
-
-.webkit-scrollbar-thumb{
-    border:2px solid white !important
 }
