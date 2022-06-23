@@ -4,13 +4,12 @@
       <meta charset="utf-8"/>
       <meta name="viewport" content="width=device-width,initial-scale=1"/>
       <title>Box Game - Drapinqs</title>
+      
       <style type="text/css">
          .App {
          text-align: center;
          }
          .App-header {
-         background: url('smoke.jpg');
-         background-size: cover;
          min-height: 100vh;
          display: flex;
          flex-direction: column;
@@ -19,6 +18,7 @@
          font-size: calc(10px + 2vmin);
          color: #fff;
          }
+         
          .game-container {
          width: 600px;
          height: 600px;
@@ -61,6 +61,148 @@
          margin: 0;
          text-shadow: 2px 2px 3px #000000, 2px -2px 3px #000000, -2px 2px 3px #000000, -2px -2px 3px #000000, 2px 0px 3px #000000, 0px 2px 3px #000000, -2px 0px 3px #000000, 0px -2px 3px #000000;
          }
+@media only screen and (max-width:1700px) {
+  /* For tablets: */
+  * {
+    font-size: 90%;
+  }
+}
+.container{
+
+  position: absolute;
+  font-size: 1.5em;
+  left: 10em;
+  top: 4em;
+  font-weight: bold;
+  max-width: 35%;
+  transform:translate(-50%,-50%);
+  -webkit-transform:translate(-50%,-50%);
+  -moz-transform:translate(-50%,-50%);
+  -ms-transform:translate(-50%,-50%);
+  -o-transform:translate(-50%,-50%)
+}
+         .container .btn {
+         position: relative;
+         width: 150px;
+         height: 50px;
+         margin: 20px;
+         }
+         .container .btn a {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background: rgba(255, 255, 255, 0.08);
+         box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+         border-top: 1px solid rgba(255, 255, 255, 0.1);
+         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+         border-radius: 30px;
+         color: #fff;
+         z-index: 1;
+         font-weight: bold;
+         font-size: 130%;
+         text-align: center;
+         letter-spacing: 0.8px;
+         text-decoration: none;
+         overflow: hidden;
+         transition: 0.5s;
+         backdrop-filter: blur(15px);
+         }
+         .container .btn a:before {
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 50%;
+         height: 100%;
+         background: linear-gradient(to left, rgba(255, 255, 255, 0.05), transparent);
+         transform: skewX(45deg) translateX(0);
+         transition: 0.5s;
+         }
+         .container .btn:hover a {
+         letter-spacing: 1.3px;
+         transition: 0.5s;
+         }
+         .container .btn:hover a:before {
+         transform: skewX(45deg) translateX(200%);
+         }
+         .container .btn:hover:before {
+         bottom: 0;
+         height: 50%;
+         width: 80%;
+         border-radius: 30px;
+         transition-delay: 0.1s;
+         }
+         .container .btn:hover:after {
+         top: 0;
+         height: 50%;
+         width: 80%;
+         border-radius: 30px;
+         transition-delay: 0.1s;
+         }
+         .container .btn:before {
+         content: "";
+         position: absolute;
+         left: 50%;
+         transform: translateX(-50%);
+         bottom: -5px;
+         width: 30px;
+         height: 10px;
+         background: #f00;
+         border-radius: 10px;
+         transition: 0.5s;
+         }
+         .container .btn:after {
+         content: "";
+         position: absolute;
+         left: 50%;
+         transform: translateX(-50%);
+         top: -5px;
+         width: 30px;
+         height: 10px;
+         background: #f00;
+         border-radius: 10px;
+         transition: 0.5s;
+         }
+         .container .btn:nth-child(1):before, .container .btn:nth-child(1):after {
+         background: #6B6B6B;
+         box-shadow: 0 0 5px #707070, 0 0 15px #707070, 0 0 30px #707070, 0 0 60px #707070;
+         }
+         .container .btn:nth-child(2):before, .container .btn:nth-child(2):after {
+         background: #6B6B6B;
+         box-shadow: 0 0 5px #707070, 0 0 15px #707070, 0 0 30px #707070, 0 0 60px #707070;
+         }
+         .container .btn:nth-child(3):before, .container .btn:nth-child(3):after {
+         background: #6B6B6B;
+         box-shadow: 0 0 5px #707070, 0 0 15px #707070, 0 0 30px #707070, 0 0 60px #707070;
+         }
+         .container .btn:nth-child(4):before, .container .btn:nth-child(4):after {
+         background: #6B6B6B;
+         box-shadow: 0 0 5px #707070, 0 0 15px #707070, 0 0 30px #707070, 0 0 60px #707070;
+         }
+         .container .btn:nth-child(5):before, .container .btn:nth-child(5):after {
+         background: #6B6B6B;
+         box-shadow: 0 0 5px #707070, 0 0 15px #707070, 0 0 30px #707070, 0 0 60px #707070;
+         }
+         .container .btn:nth-child(6):before, .container .btn:nth-child(6):after {
+         background: #6B6B6B;
+         box-shadow: 0 0 5px #707070, 0 0 15px #707070, 0 0 30px #707070, 0 0 60px #707070;
+         }
+#myVideo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
          #info2 {
   color: white;
   text-shadow: 2px 2px 3px #000000, 2px -2px 3px #000000, -2px 2px 3px #000000, -2px -2px 3px #000000, 2px 0px 3px #000000, 0px 2px 3px #000000, -2px 0px 3px #000000, 0px -2px 3px #000000;
@@ -71,11 +213,17 @@
   font-weight: bold;
   max-width: 35%;
 }
+
       </style>
    </head>
+   <video autoplay muted loop preload playsinline class="fullscreen bg-video" id="myVideo">
+  <source src="..\bg.mp4" type="video/mp4">
+</video>
    <body>
       <noscript>You need to enable JavaScript to run this app.</noscript>
       <div id="root"></div>
+      <div class="container">
+         <div class="btn"><a href="..\index.html">Go Back</a></div></div>
       <div id="info2"><p>Clicking on a red square turns it into a blue square.<br>Clicking on a blue square turns it into a red square.<br>The objective is to make all squares blue, as fast as possible.</p></div>
       
       <script>! function(e) {
