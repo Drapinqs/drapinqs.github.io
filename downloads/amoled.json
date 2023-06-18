@@ -1,0 +1,46 @@
+{
+    "name": "Amoled Only",
+    "description": "Nothing but pure #000000 + Accents",
+    "authors": [
+        {
+            "name": "Drapinqs",
+            "id": "221500032845611010"
+        }
+  ],
+  "spec": 2,
+  "semanticColors": {
+    "HEADER_PRIMRARY": ["#000000"],
+    "HEADER_SECONDARY": ["#B6B6B6"],
+    "TEXT_NORMAL": ["#DCDDDE"],
+    "TEXT_MUTED": ["#6C757D"],
+    "INTERACTIVE_NORMAL": ["#C8C8C8"],
+    "TEXT_LINK": ["#007BFF"],
+    "INTERACTIVE_HOVER": ["#DCDDDE"],
+    "INTERACTIVE_ACTIVE": ["#DCDDDE"],
+    "INTERACTIVE_MUTED": ["#6C757D"],
+    "BACKGROUND_PRIMRARY": ["#000000"],
+    "BACKGROUND_SECONDARY": ["#000000"],
+    "BACKGROUND_SECONDARY_ALT": ["#000000"],
+    "BACKGROUND_TERTIARY": ["#000000"],
+    "BACKGROUND_MOBILE_SECONDARY": ["#000000"],
+    "BACKGROUND_MODIFIER_ACTIVE": ["#0C0C0C"],
+    "BACKGROUND_MODIFIER_SELECTED": ["#000000"],
+    "CHANNEL_ICON": ["#B6B6B6"],
+    "CHANNEL_TEXT_AREA_PLACEHOLDER": ["#6C757D"],
+    "CHAT_BACKGROUND": ["#000000"],
+    "SPOILER_HIDDEN_BACKGROUND": ["#0C0C0C"]
+  },
+  "rawColors": {
+    "BRAND_300": "#DCDDDE",
+    "BRAND_500": "#007BFF",
+    "BRAND_560": "#6C757D",
+    "RED_400": "#DC3545",
+    "YELLOW_300": "#FFC107",
+    "PRIMARY_100": "#DCDDDE",
+    "PRIMARY_600": "#000000",
+    "PRIMARY_630": "#000000",
+    "PRIMARY_800": "#000000",
+    "PRIMARY_700": "#000000",
+    "PRIMARY_200": "#DCDDDE"
+  }
+}
