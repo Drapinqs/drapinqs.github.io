@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Jost');
+
+* {
+  box-sizing: border-box;
+  user-select: none !important;
+  font-family: Jost;
+}
+
+body {
+  background-color: #000;
+  color: white;
+  animation: fadeInAnimation ease 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#overlay-toggle {
+  position: absolute;
+  display: none;
+}
+
+.overlay {
+  z-index: 1;
+  background-color: black;
+}
+
+.overlay label {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vw;
+  color: rgb(255, 255, 255);
+  font-size: 2.5rem;
+}
+
+.no-hover {
+  display: block;
+}
+
+.hover {
+  display: none;
+}
+
+.fullscreen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+#overlay-toggle:checked~.overlay {
+  animation-fill-mode: forwards;
+  animation-name: fade, hide;
+  animation-delay: 0s, 600ms;
+  animation-duration: 600ms, 1ms;
+}
+
+#overlay-toggle:checked~.overlay label {
+  animation-fill-mode: forwards;
+  animation-name: fade;
+  animation-delay: 0s;
+  animation-duration: 500ms;
+}
+
+@media(hover: hover) {
+  .hover {
+    display: block;
+  }
+  .no-hover {
+    display: none;
+  }
+}
+
+@keyframes fade {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes hide {
+  to {
+    visibility: hidden;
+  }
+}
+
+.intro {
+  position: absolute;
+  top: 12%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.strong {
+  color: white;
+  font-size: 90%;
+}
+
+.superstrong {
+  font-size: 130%;
+}
+
+.introtxt {
+  position: absolute;
+  top: 110%;
+  right: 50.3%;
+  transform: translate(50%, -50%) skew(30deg);
+  font-family: monospace;
+  font-size: 200%;
+  color: #ddd;
+  word-spacing: 0.5rem;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.intrologo {
+  width: 100%;
+  transform: scale(1.1);
+}
+
+.intro2 {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.intro3 {
+  position: absolute;
+  top: 80%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.intro3 h1 {
+  font-weight: 1;
+}
+
+.front a {
+  text-decoration: none;
+  color: whitesmoke;
+  border: 2px white solid;
+  border-radius: 15px;
+  padding: 10px;
+  line-height: 3;
+}
+
+.card {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  background-color: rgb(142 142 142 / 6%);
+  border-radius: 15px;
+  box-shadow: 1em 1em 0.5em #0008;
+  transform-style: preserve-3d;
+  width: 100%;
+  max-width: 300px;
+}
+
+.card .user-img {
+  background-image: url('cat.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 160px;
+  border-radius: 50%;
+  height: 160px;
+  margin: auto;
+  border: 1px solid white;
+  margin-top: -135px;
+}
+
+.card .front {
+  backface-visibility: hidden;
+  padding: 3rem;
+  height: 100%;
+  backdrop-filter: blur(0.4em);
+}
+
+button {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:active {
+  transform: scale(1.01);
+}
+
+.unstable-warning {
+  color: red;
+  font-style: italic;
+  margin-top: -20px;
+}
+
+.unstable {
+  color: red !important;
+}
+
+#root {
+  border: 0px !important;
+}

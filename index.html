@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="icon" type="image/x-icon" href="icon.gif">
+  <title>Drapinqs <3</title>
+  <style>
+    .popup {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+    .popup-content {
+      background-color: rgba(36, 36, 36, 0.8);
+      backdrop-filter: blur(0.4em);
+      width: 300px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      border-radius: 15px;
+    }
+    .close {
+      float: right;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop id="myVideo">
+    <source src="bg.mp4" type="video/mp4"> Your browser does not support HTML5 video.
+  </video>
+  <main>
+    <input type="checkbox" autocomplete="off" id="overlay-toggle">
+    <div class="overlay fullscreen">
+      <label for="overlay-toggle" onclick="audioPlay();videoPlay()">
+        <span class="no-hover" style="font-family: derk; font-size: 0.6em;">⛧ tap to view ⛧</span>
+        <span class="hover" style="font-family: derk; font-size: 0.6em;">⛧ click to view ⛧</span>
+      </label>
+    </div>
+    <audio loop="" preload="auto" id="audio">
+      <source src="sng.mp3" type="audio/mp3">
+    </audio>
+    <section class="fullscreen text-content">
+      <div class="intro">
+        <img class="intrologo" src="drapinqs.gif">
+        <i class="introtxt"></i>
+      </div>
+      <div class="intro2">
+        <section class="container">
+          <div class="card">
+            <div class="front">
+              <div class="user-img"></div>
+              <h1>Drapinqs</h1>
+              <p class="subheading">he/him</p>
+              <a href="#" onclick="openProjectsPopup()">Projects</a>
+              <a href="#" onclick="openDownloadsPopup()">Downloads</a>
+              <a href="#" onclick="openLinksPopup()">Links</a>
+              <a style="cursor: pointer;" id="root"><span>Confetti</span></a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="intro3">
+        <span>
+          <strong>^w^</strong>
+        </span>
+      </div>
+    </section>
+    <div id="projectsPopup" class="popup">
+      <div class="popup-content">
+        <span style="padding-right: 12px !important; color: white; font-weight: bolder; border: white 1px solid; padding: 10px; border-radius: 15px; padding-left: 12px;" class="close" onclick="closePopup('projectsPopup')">✖</span>
+        <h2>Projects</h2>
+        <div class="front">
+          <ul style="list-style:none;line-height: 4;">
+            <li><a href="#">upload games later</a></li>
+            <li><a href="#">upload scripts later</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="downloadsPopup" class="popup">
+      <div class="popup-content">
+        <span style="padding-right: 12px !important; color: white; font-weight: bolder; border: white 1px solid; padding: 10px; border-radius: 15px; padding-left: 12px;" class="close" onclick="closePopup('downloadsPopup')">✖</span>
+        <h1>Downloads</h1>
+        <p class="unstable-warning">* marked fields are unstable</p>
+        <div class="front">
+          <ul style="list-style:none;line-height: 4;">
+            <li><a href="https://github.com/Drapinqs/drapinqs.github.io/raw/main/downloads/Bridging%20Practice%201.8.zip">1.8.9 Bridging Map</a></li>
+            <li><a class="unstable" href="https://github.com/Drapinqs/drapinqs.github.io/raw/main/downloads/WindowsOptimizationPack.zip">Windows Optimization Pack</a></li>
+            <li><a class="unstable" href="https://raw.githubusercontent.com/Drapinqs/drapinqs.github.io/main/downloads/YTTheme.zip">YouTube #000 Theme</a></li>
+            <li><a href="https://github.com/Drapinqs/drapinqs.github.io/raw/main/downloads/RGB%20Cursor.zip">Windows RGB Cursor</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="linksPopup" class="popup">
+      <div class="popup-content">
+        <span style="padding-right: 12px !important; color: white; font-weight: bolder; border: white 1px solid; padding: 10px; border-radius: 15px; padding-left: 12px;" class="close" onclick="closePopup('linksPopup')">✖</span>
+        <h2>Links</h2>
+        <div class="front">
+          <ul style="list-style:none;line-height: 4;">
+            <li><a href="https://youtube.com/drapinqs" target="_blank">YouTube</a></li>
+            <li><a href="https://discord.com/users/221500032845611010" target="_blank">Discord</a></li>
+            <li><a href="https://github.com/drapinqs" target="_blank">Github</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script id="rendered-js" type="module">
+    import React from "https://esm.run/react@18";
+    import { createRoot } from "https://esm.run/react-dom@18/client";
+    import confetti from "https://esm.run/canvas-confetti@1";
+
+    function App() {
+      function onClick() {
+        confetti({
+          particleCount: 200,
+          spread: 120
+        });
+      }
+
+      return (
+        React.createElement("a", { className: "button", onClick: onClick },
+          React.createElement("span", null, "Confetti"))
+      );
+    }
+
+    createRoot(document.getElementById("root")).render(React.createElement(App, null));
+  </script>
+  <script>
+    function openProjectsPopup() {
+      openPopup('projectsPopup');
+    }
+    function openDownloadsPopup() {
+      openPopup('downloadsPopup');
+    }
+    function openLinksPopup() {
+      openPopup('linksPopup');
+    }
+    function openPopup(popupId) {
+      var popup = document.getElementById(popupId);
+      popup.style.display = 'block';
+      setTimeout(function () {
+        popup.style.opacity = '1';
+      }, 10);
+    }
+    function closePopup(popupId) {
+      var popup = document.getElementById(popupId);
+      popup.style.opacity = '0';
+      setTimeout(function () {
+        popup.style.display = 'none';
+      }, 300);
+    }
+    function audioPlay() {
+      var audio = document.getElementById("audio");
+      audio.volume = 0.7;
+      audio.play();
+    }
+  </script>
+</body>
+</html>
